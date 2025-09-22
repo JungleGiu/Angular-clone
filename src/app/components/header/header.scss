@@ -1,0 +1,40 @@
+ul {
+    list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+    a {
+        text-decoration: none;
+        color: #9194A1;
+        font-weight: 500;
+        font-size: 1.05rem;
+        text-transform: uppercase;
+        letter-spacing: -0.1px;
+        cursor: pointer;
+    }
+    button{
+        background-color: #FA5757;
+        border-radius: 0.2rem;
+        border: none;
+        padding: 0.7rem 1.5rem;
+        a{
+            color: #ffffff;
+        }
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 0 3rem;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.05);
+}
+
+img {
+    cursor: pointer;
+    scale :0.95;
+}
