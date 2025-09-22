@@ -10,3 +10,20 @@
     </nav>
     <img id="hamburger" (click)="toggleMobileMenu()" src="Images/icon-hamburger.svg">
 </header>
+
+<div id="mobile-menu" *ngIf="isOpen()">
+<div id="mobile-menu-control">
+   <img src="Images/logo-bookmark-white.svg" (click)="toggleMobileMenu()">
+   <img src="Images/icon-close.svg" (click)="toggleMobileMenu()">
+</div>   
+<ul>
+    <li><a href="#">Features</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a>Login</a></li>
+</ul>
+<div id="mobile-menu-footer">
+    <img src="Images/icon-facebook.svg">
+    <img src="Images/icon-twitter.svg">
+</div>
+</div>

@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+@use '../../../styles' as var;
+
+
 ul {
     list-style-type: none;
         display: flex;
@@ -17,7 +19,7 @@ ul {
         cursor: pointer;
     }
     button{
-        background-color: #FA5757;
+        background-color: var.$quaternary-color;
         border-radius: 0.2rem;
         border: none;
         padding: 0.8rem 1.9rem;
@@ -46,9 +48,11 @@ img {
     scale :0.95;
 }
 
+
 @media screen and (max-width: 768px) {
     header {
         padding: 1.2rem 0.3rem 1.2rem 0.5rem;
+        position : sticky;
     }
     nav {
         display: none;
@@ -62,4 +66,78 @@ img {
      width: 21px;
     height: 18px;
     }
+    #mobile-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #1c213a;
+        opacity: 0.95;
+        padding : 1.2rem 0.8rem 1.2rem 0.8rem;
+        gap: 1.5rem;
+        z-index: 1;
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        margin-top: 3rem;
+        border-top: var.$secondary-color solid 1px;
+        width: 100%;
+        
+        li {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            border-bottom: var.$secondary-color solid 1px; 
+            padding: 1.2rem 0;
+        }
+        a{
+            color: #ffffff;
+            font-weight: 200;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+    }
+  
+    button{
+        background-color: transparent;
+        border: none;
+       box-shadow: none;
+       padding: 0;
+       margin: 0;
+   
+    }
+
+
+    #mobile-menu-control {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            cursor: pointer;
+            scale: 1;
+        }
+    }
+    #mobile-menu-footer {
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4rem;
+        align-items: center;
+        img {
+            cursor: pointer;
+            scale: 1;
+        }
+    }
+}
 }

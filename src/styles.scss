@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+
 html, body {
     margin: 0;
     padding: 0;
@@ -17,3 +19,9 @@ html, body {
 a,p,h1,h2,h3,h4,h5,h6{
 font-family: "Rubik", sans-serif;
 }
+
+
+$primary-color: #252B46;
+$secondary-color: #9194A1;
+$tertiary-color: #5368DF;
+$quaternary-color: #FA5757;
