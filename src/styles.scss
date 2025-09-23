@@ -1,27 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
-    background-color: #ffffff;
-    color: #252B46;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  background-color: #ffffff;
+  color: #252b46;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-a,p,h1,h2,h3,h4,h5,h6{
-font-family: "Rubik", sans-serif;
+a,
+button,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Rubik', sans-serif;
 }
 
+$primary-color: #252b46;
+$secondary-color: #9194a1;
+$tertiary-color: #5368df;
+$quaternary-color: #fa5757;
 
-$primary-color: #252B46;
-$secondary-color: #9194A1;
-$tertiary-color: #5368DF;
-$quaternary-color: #FA5757;
+@mixin button($background-color, $color, $padding, $font-size) {
+  background-color: $background-color;
+  border-radius: 0.3rem;
+  border: none;
+  padding: $padding;
+  font-size: $font-size;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 300;
+  box-shadow: rgba(83, 104, 223, 0.25) 0rem 0.3rem 0.6rem;
+  font-family: 'Rubik', sans-serif;
+  color: $color;
+  text-decoration: none;
+}
