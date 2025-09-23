@@ -1,40 +1,125 @@
 @use '../../../styles' as var;
 
-.hero{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    height: 70vh;
+#hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.6rem;
+  height: 75vh;
+  width: 100%;
+  padding: 0 3.5rem;
+  position: relative;
+  overflow: hidden;
+}
+#hero-image::after {
+  content: '';
+  position: absolute;
+  top: 18vh;
+  right: 0;
+  bottom: 0;
+  left: 65%;
+  height: 68%;
+  border-radius: 0 0 0 6.5rem;
+  width: 55%;
+  opacity: 100%;
+  background-color: var.$tertiary-color;
+  z-index: 1;
+}
+app-text-content {
+  width: 50%;
+}
+#hero-image {
+  width: 50%;
+  padding-left: 5rem;
+  img {
+    position: relative;
+    z-index: 2;
     width: 100%;
-    padding-left: rem;
-
-}
-app-text-content{
-    width: 50%;
-}
-.hero-image{
-    width: 50%;
-
-}
-.hero-content{
-    width: 45%;
-    
+    height: 100%;
+    scale: 1.1;
+  }
 }
 
-.hero-buttons{
+.hero-content {
+  width: 50%;
+}
+
+.hero-buttons {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 0.5rem;
-    width: 100%;
+    margin-top: 2rem;
+  gap: 0.5rem;
+  width: 100%;
 }
 
-.hero-buttons :first-child{
-    @include var.button(var.$tertiary-color, #ffffff, 0.8rem 1rem, 1rem);
+.hero-buttons :first-child {
+  @include var.button(var.$tertiary-color, #ffffff, 1rem 1.8rem, 1.1rem);
 }
-.hero-buttons :last-child{
-    @include var.button(#0000000d, var.$primary-color, 0.8rem 1rem, 1rem);
+.hero-buttons :last-child {
+  @include var.button(#0000000d, var.$primary-color, 1rem 1.8rem, 1.1rem);
+}
+
+@media screen and (max-width: 768px) {
+    #hero {
+        flex-direction: column-reverse;
+        justify-content: right;
+        align-items: center;
+        gap: 1.3rem;
+        width: 100vw;
+        padding: 0 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+    #hero-image::after {
+        content: '';
+        position: absolute;
+        top: 9vh;
+        right: 0;
+        bottom: 0;
+        left: 20%;
+        height: 32%;
+        border-radius: 0 0 0 5rem;
+        width: 100%;
+        opacity: 100%;
+        background-color: var.$tertiary-color;
+        z-index: 1;
+    }
+    app-text-content {
+        width: 90%;
+
+    }
+    #hero-image {
+        width: 80%;
+        margin: 2.5rem 4rem 2rem 2rem;
+        padding:0;
+        img {
+            position: relative;
+            z-index: 2;
+            width: 105%;
+            height: 100%;
+          
+        }
+    }
+    
+    .hero-content {
+        width: 95%;
+    }
+    
+    .hero-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  gap: 0.33rem;
+ width: 100%;
+}
+
+.hero-buttons :first-child {
+  @include var.button(var.$tertiary-color, #ffffff, 0.8rem 2.3rem, 0.88rem);
+}
+.hero-buttons :last-child {
+  @include var.button(#0000000d, var.$primary-color, 0.8rem 2.3rem, 0.88rem);
+}
 }

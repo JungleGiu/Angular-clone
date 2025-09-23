@@ -7,7 +7,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
-  background-color: #ffffff;
+  background-color: transparent;
   color: #252b46;
 }
 
@@ -48,13 +48,13 @@ $quaternary-color: #fa5757;
   text-decoration: none;
 }
 
-@mixin content-centered {
+@mixin content-centered($gap){
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-
+  gap: $gap;
 }
 
 @mixin content-start {
