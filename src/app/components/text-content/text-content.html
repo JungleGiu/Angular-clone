@@ -1,0 +1,6 @@
+<div class="text-content" [ngClass]="{'super-title':textContentSuperTitle, 'no-super-title':!textContentSuperTitle}" [ngSwitch]="textContentSuperTitle">
+  <h1 *ngIf="textContentSuperTitle">{{textContentSuperTitle}}</h1>
+  <h2 *ngIf="!textContentSuperTitle" >{{textContentTitle}}</h2>
+  <p>{{textContentDescription}}</p>
+
+</div>

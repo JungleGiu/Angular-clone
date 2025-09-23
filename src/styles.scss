@@ -35,15 +35,33 @@ $quaternary-color: #fa5757;
 
 @mixin button($background-color, $color, $padding, $font-size) {
   background-color: $background-color;
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
   border: none;
   padding: $padding;
   font-size: $font-size;
   cursor: pointer;
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
   box-shadow: rgba(83, 104, 223, 0.25) 0rem 0.3rem 0.6rem;
   font-family: 'Rubik', sans-serif;
   color: $color;
   text-decoration: none;
+}
+
+@mixin content-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+@mixin content-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem ;
 }

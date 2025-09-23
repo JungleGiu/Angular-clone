@@ -1,0 +1,32 @@
+@use '../../../styles' as var;
+
+h1{
+    font-size: 3.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var.$primary-color;
+    width: 93%;
+    margin-bottom: 1.5rem;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var.$primary-color;
+}
+
+p{
+    color: var.$secondary-color;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.super-title{
+    @include var.content-start();
+    margin-bottom: 1rem;
+}
+.no-super-title{
+    @include var.content-centered();
+    margin-bottom: 1rem;
+}

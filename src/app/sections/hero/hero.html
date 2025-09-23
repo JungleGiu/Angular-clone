@@ -1,1 +1,18 @@
-<p>hero works!</p>
+<section id="hero" class="hero">
+  <div class="hero-content">
+    <app-text-content
+      [textContentSuperTitle]="'A simple bookmark manager'"
+      [textContentDescription]="
+        'A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites load instantly. Try it for free.'
+      "
+    >
+    </app-text-content>
+    <div class="hero-buttons">
+      <button>Get it on Chrome</button>
+      <button>Get it on Firefox</button>
+    </div>
+  </div>
+  <div id="hero-image">
+    <img src="/Images/illustration-hero.svg" alt="Bookmark hero image" />
+  </div>
+</section>
