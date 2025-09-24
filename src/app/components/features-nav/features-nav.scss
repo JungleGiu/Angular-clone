@@ -1,0 +1,29 @@
+@use '../../../styles' as var;
+#features-nav {
+@include var.content-centered(3rem);
+flex-direction: row;
+margin: 0 auto 4rem;
+    color: var.$secondary-color; 
+    font-size: 1.4rem;
+    font-weight: 400;
+    width: 60%;
+
+    border-bottom: solid 1px var.$secondary-color;
+}
+
+label {
+    cursor: pointer;
+     padding: 0  2rem
+}
+input {
+    display: none;
+}
+input:checked + label {
+    color: var.$primary-color;
+    border-bottom: solid 3px var.$quaternary-color;
+    line-height: 5rem;
+    padding: 0 2rem
+}
+label:hover {
+    color: var.$primary-color;
+}
