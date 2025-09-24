@@ -1,4 +1,5 @@
-import { Component , signal } from '@angular/core';
+import { Component, WritableSignal, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-features-nav',
@@ -7,5 +8,5 @@ import { Component , signal } from '@angular/core';
   styleUrl: './features-nav.scss'
 })
 export class FeaturesNav {
-cardNumber = signal(1|2|3)
+@Input({required: true}) cardNumber!: WritableSignal<1|2|3>
 }

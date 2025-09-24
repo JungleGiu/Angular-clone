@@ -1,0 +1,26 @@
+@use '../../../styles' as var;
+#features-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 0 0 8rem;
+}
+
+.features-card {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+ gap: 7rem;
+}
+.card-text{
+    width: 45%;
+}
+.features-card button{
+@include var.button(var.$tertiary-color, #ffffff, 0.7rem 2rem, 1.1rem);
+}
+.features-card button:hover{
+    background-color: var.$secondary-color;
+    color: #ffffff;
+}

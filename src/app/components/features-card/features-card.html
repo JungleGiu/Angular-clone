@@ -1,1 +1,43 @@
-<p>features-card works!</p>
+<div id="features-cards-container">
+    <div *ngIf="cardNumber() === 1" class="features-card" id="card-1">
+    <img src="/Images/illustration-features-tab-1.svg" alt="Bookmark hero image" />
+    <div class="card-text">    
+    <app-text-content
+        [textContentSmallTitle]="'Bookmark in one click'"
+        [textContentDescription]="
+          'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.'
+        "
+      >
+      </app-text-content>
+      <button>More info</button>
+      </div>
+   
+    </div>
+    <div *ngIf="cardNumber() === 2" class="features-card" id="card-2">
+    <img src="/Images/illustration-features-tab-2.svg" alt="Bookmark hero image" />
+    <div class="card-text">
+        <app-text-content
+        [textContentSmallTitle]="'Intelligent search'"
+        [textContentDescription]="
+          'Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.'
+        "
+      >
+    </app-text-content>
+      <button>More info</button>
+      </div>
+
+    </div>
+    <div *ngIf="cardNumber() === 3" class="features-card" id="card-3">
+    <img src="/Images/illustration-features-tab-3.svg" alt="Bookmark hero image" />
+    <div class="card-text">
+        <app-text-content
+        [textContentSmallTitle]="'Share your bookmarks'"
+        [textContentDescription]="
+          'Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.'
+        "
+      >
+      </app-text-content>
+      <button>More info</button>
+      </div>
+    </div>
+</div>

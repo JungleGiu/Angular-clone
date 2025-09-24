@@ -10,5 +10,6 @@ import { NgSwitch , NgIf, NgClass } from '@angular/common';
 export class TextContent {
 @Input() textContentSuperTitle?: string = '';
 @Input() textContentTitle?: string = '';
+@Input() textContentSmallTitle?: string = '';
 @Input() textContentDescription: string = '';
 }
