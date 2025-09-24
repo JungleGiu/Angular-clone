@@ -7,7 +7,6 @@ margin: 0 auto 6rem;
     font-size: 1.4rem;
     font-weight: 400;
     width: 60%;
-
     border-bottom: solid 1px var.$secondary-color;
 }
 
@@ -26,4 +25,44 @@ input:checked + label {
 }
 label:hover {
     color: var.$primary-color;
+}
+
+@media screen and (max-width: 768px) {
+    #features-nav {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        margin: 0 auto 3rem;
+        font-size: 1.1rem;
+        border-bottom: none;
+    }
+    label {
+    width: 100%;
+        cursor: pointer;
+         border-bottom: solid 1px var.$secondary-color;
+        line-height: 2rem;
+         padding: 1rem 2rem ;
+    }
+    label:first-of-type {
+        border-top: solid 1px var.$secondary-color;
+        padding: 1rem 2rem ;
+    }
+    input {
+        display: none;
+    }
+    input:checked + label {
+        color: var.$primary-color;
+        border-bottom: solid 1px var.$secondary-color;
+        text-decoration: underline solid 3px var.$quaternary-color;
+        text-underline-offset: 1.5rem ;
+        line-height: 2rem;
+        padding:  1rem 2rem;
+    }
+    label:hover {
+        color: var.$primary-color;
+    }
+    
 }

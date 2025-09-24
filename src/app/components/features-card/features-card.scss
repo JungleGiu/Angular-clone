@@ -24,3 +24,28 @@
     background-color: var.$secondary-color;
     color: #ffffff;
 }
+
+@media screen and (max-width: 768px) {
+    #features-cards-container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .features-card {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .features-card img{
+        width:70%;
+    }
+    .card-text{
+        width: 90%;
+        text-align: center;
+        margin: 0 auto 1.5rem;
+    }
+    .features-card button{
+        @include var.button(var.$tertiary-color, #ffffff, 0.6rem 2rem, 0.9rem);
+       width: 100%;
+    }
+ 
+}

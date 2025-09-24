@@ -6,3 +6,27 @@
     width: 35%;
     margin: 0 auto 6rem;
 }
+
+@media screen and (max-width: 768px) {
+    #features {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 95vw;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    #features-text {
+        width: 85%;
+        margin-bottom: 2rem;
+    }
+    #features-nav-container {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       width: 100%;
+    }
+}

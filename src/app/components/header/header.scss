@@ -52,7 +52,7 @@ img {
 @media screen and (max-width: 768px) {
     header {
         padding: 1.2rem 0.3rem 1.2rem 0.5rem;
-        position : sticky;
+        width: 100vw;
     }
     nav {
         display: none;
