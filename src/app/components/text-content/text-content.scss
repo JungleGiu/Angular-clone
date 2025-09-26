@@ -55,7 +55,7 @@ p{
     margin-bottom: 1rem;
 }
 .no-super-title{
-    @include var.content-centered(1.2rem);
-    margin-bottom: 1rem;    
+    @include var.content-centered(0.5rem);
+    margin-bottom: 0.5rem;    
 }
 }

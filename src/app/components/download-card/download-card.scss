@@ -42,3 +42,27 @@
 @include var.button(var.$tertiary-color, #ffffff, 1rem 3.5rem, 1rem);
 width: 100%;
 }
+
+@media  screen and (max-width: 768px) {
+    .download-card{
+        width: 90%;
+        height: 70%;
+        margin: 1rem auto;
+        padding: 1rem 1.5rem;
+        gap: 2rem;
+    }
+    .card-text{
+        h3{
+            font-size: 1.4rem;
+        }
+        p{
+            font-size: 0.85rem;
+        }
+    }
+    .card-button{
+        gap: 1rem;
+    }
+    .download-card button{
+        @include var.button(var.$tertiary-color, #ffffff, 0.8rem 2.5rem, 0.85rem);
+    }
+}
