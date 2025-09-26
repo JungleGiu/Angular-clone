@@ -1,5 +1,5 @@
 #download {
-    margin-top: 10rem;
+    margin-top: 9rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,6 +16,22 @@
   
 }
 
+
 #download-text {
     width: 31%;
+}
+
+@media screen and (max-width: 768px) {
+    #download {
+        margin-top: 5rem;
+    
+    }
+    #download-cards-container {
+        flex-direction: column;
+        width: 80%;
+    }
+    #download-text {
+        width: 90%;
+    }
+    
 }
