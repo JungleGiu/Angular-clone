@@ -1,1 +1,19 @@
-<p>faq works!</p>
+<section id="faq" class="faq">
+    <div id="faq-text">
+        <app-text-content
+        [textContentTitle]="'Frequently Asked Questions'"
+        [textContentDescription]="
+            'Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.'
+        "
+    />
+    </div>
+    <div id="faq-container">
+    @for (faq of faqs; track $index) {
+        <details>
+            <summary>{{faq.question}}</summary>
+            <p>{{faq.answer}}</p>
+        </details>
+    
+    }
+    </div>
+</section>

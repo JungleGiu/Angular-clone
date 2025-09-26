@@ -39,7 +39,7 @@
     gap: 1.5rem;
 }
 .download-card button{
-@include var.button(var.$tertiary-color, #ffffff, 1rem 3.5rem, 1rem);
+@include var.button(var.$tertiary-color, #ffffff, 1rem 3rem, 1rem);
 width: 100%;
 }
 

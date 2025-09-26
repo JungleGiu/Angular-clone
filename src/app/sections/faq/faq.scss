@@ -1,0 +1,60 @@
+@use '../../../styles' as var;
+#faq{
+    margin-top: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#faq-text{
+    text-align: center;
+    width: 45%;
+
+}
+#faq-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    width: 30%;
+    font-size: 1.2rem;
+}
+summary {
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+
+}
+
+details {
+  cursor: pointer;
+    width: 100%;
+    padding: 1rem 0;
+border-bottom: solid 1px var.$secondary-color;
+}
+::details-content {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var.$secondary-color;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after{
+      content: url('/Images/icon-arrow.svg');
+  position: absolute;
+  right: 30px;
+  transform: translateX(100%);
+  
+}
+
+details[open] summary::after  {
+  transform: translateX(100%) rotate(180deg);
+  
+}
