@@ -1,11 +1,14 @@
-<app-text-content
+<section id="download" class="download">
+<div id="download-text"><app-text-content
     [textContentTitle]="'Download the extension'"
     [textContentDescription]="
       'We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.'
     "
   />
+</div>
   <div id="download-cards-container">
 @for (browser of browsers(); track $index) {
     <app-download-card [browser]="browser">"></app-download-card>
 }
   </div>
+</section>

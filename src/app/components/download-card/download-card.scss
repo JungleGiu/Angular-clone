@@ -1,0 +1,44 @@
+@use '../../../styles' as var;
+.download-card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1.5rem 3rem;
+    margin: 1rem;
+    text-align: center;
+    box-shadow: 1px 2px 4px 2px rgba(190, 190, 190, 0.2);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+   width: 90%;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    h3{
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: var.$primary-color;
+    }
+    p{
+        font-size: 1rem;
+        font-weight: 400;
+        color: var.$secondary-color;
+    }
+}
+.card-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.download-card button{
+@include var.button(var.$tertiary-color, #ffffff, 1rem 3.5rem, 1rem);
+width: 100%;
+}

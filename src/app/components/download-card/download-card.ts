@@ -7,5 +7,5 @@ import { Component, Signal , Input} from '@angular/core';
   styleUrl: './download-card.scss'
 })
 export class DownloadCard {
-@Input({required: true}) browser!: Signal<{image: string, title: string, version: string}>
+@Input({required: true}) browser!: {image: string, title: string, version: string}
 }
