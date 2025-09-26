@@ -1,9 +1,9 @@
-import { Component, signal, WritableSignal, } from '@angular/core';
-import { NgIf } from '@angular/common';
+import { Component, signal } from '@angular/core';
+
 
 @Component({
   selector: 'app-header',
-  imports: [NgIf],
+  imports: [],
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })

@@ -1,5 +1,6 @@
 <div id="features-cards-container">
-    <div *ngIf="cardNumber() === 1" class="features-card" id="card-1">
+     @if (cardNumber() === 1) {
+      <div  class="features-card" id="card-1">
     <img src="/Images/illustration-features-tab-1.svg" alt="Bookmark hero image" />
     <div class="card-text">    
     <app-text-content
@@ -12,8 +13,10 @@
       <button>More info</button>
       </div>
    
-    </div>
-    <div *ngIf="cardNumber() === 2" class="features-card" id="card-2">
+    </div> 
+  }
+  @if (cardNumber() === 2){
+   <div  class="features-card" id="card-2">
     <img src="/Images/illustration-features-tab-2.svg" alt="Bookmark hero image" />
     <div class="card-text">
         <app-text-content
@@ -25,9 +28,9 @@
     </app-text-content>
       <button>More info</button>
       </div>
-
     </div>
-    <div *ngIf="cardNumber() === 3" class="features-card" id="card-3">
+  }
+   @if (cardNumber() === 3){ <div  class="features-card" id="card-3">
     <img src="/Images/illustration-features-tab-3.svg" alt="Bookmark hero image" />
     <div class="card-text">
         <app-text-content
@@ -40,4 +43,5 @@
       <button>More info</button>
       </div>
     </div>
+  }
 </div>

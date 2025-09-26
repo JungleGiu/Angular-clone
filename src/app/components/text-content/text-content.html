@@ -1,6 +1,12 @@
-<div class="text-content" [ngClass]="{'super-title':textContentSuperTitle || textContentSmallTitle, 'no-super-title':!textContentSuperTitle && !textContentSmallTitle} " [ngSwitch]="textContentSuperTitle">
-  <h1 *ngIf="textContentSuperTitle">{{textContentSuperTitle}}</h1>
-  <h2 *ngIf="!textContentSuperTitle" >{{textContentTitle}}</h2>
-  <h3 *ngIf="textContentSmallTitle" >{{textContentSmallTitle}}</h3>
+<div class="text-content" [ngClass]="{'super-title':textContentSuperTitle || textContentSmallTitle, 'no-super-title':!textContentSuperTitle && !textContentSmallTitle} " >
+  @if (textContentSuperTitle){
+    <h1>{{textContentSuperTitle}}</h1>
+  }
+ @if (!textContentSuperTitle) {
+   <h2>{{textContentTitle}}</h2>
+  }
+  @if (textContentSmallTitle)
+  {<h3>{{textContentSmallTitle}}</h3>
+}
   <p>{{textContentDescription}}</p>
 </div>

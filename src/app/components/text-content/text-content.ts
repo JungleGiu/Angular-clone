@@ -1,9 +1,9 @@
 import { Component, Input  } from '@angular/core';
-import { NgSwitch , NgIf, NgClass } from '@angular/common';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-text-content',
-  imports: [NgSwitch, NgIf , NgClass],
+  imports: [ NgClass],
   templateUrl: './text-content.html',
   styleUrl: './text-content.scss'
 })
