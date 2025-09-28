@@ -26,7 +26,8 @@ summary {
   list-style: none;
   cursor: pointer;
   position: relative;
-
+  padding-inline: 0;
+  margin-bottom: 0;
 }
 
 details {
@@ -34,9 +35,15 @@ details {
     width: 100%;
     padding: 1rem 0;
 border-bottom: solid 0.5px var.$secondary-color;
+ &[open] > summary {
+    margin-bottom: 1rem;
+  }
+
+  &[open] > *:not(summary) {
+    margin-top: 0; 
+  }
 }
 ::details-content {
-  margin-top: 1rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.45;
@@ -81,7 +88,13 @@ details[open] summary::after  {
           padding: 0.7rem 0;
       border-bottom: solid 1px var.$secondary-color;
       height: min-content;
-      }
+       &[open] > summary {
+    margin-bottom: 1rem;
+  }
+
+  &[open] > *:not(summary) {
+    margin-top: 0; 
+  }}
       ::details-content {
         margin-top: 0.5rem;
         font-size: 0.9rem;
