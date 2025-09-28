@@ -133,8 +133,8 @@ npm test      # or: yarn test, or: pnpm test
 ## 🧰 Tecnologies used
 - Angular 20
 - TypeScript
-- pnpm
 - SASS (SCSS)
+- pnpm
 - Karma
 - Jasmine
 
