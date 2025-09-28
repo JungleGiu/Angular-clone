@@ -1,59 +1,150 @@
-# N
+# Angular Clone - Bookmark
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.2.
+## 📓 Introduction
+This Exercise is about learning how to use Angular framework and clone a website [https://bookmarkextension.vercel.app/] achieving the same functionality and most similar UI utilizing Angular toolkit.
 
-## Development server
+## ✅ Goals
 
-To start a local development server, run:
+* Learn how to use Angular framework basic tools
+* Learn about the Angular CLI
+* Learn about routing and navigation in Angular SPA system
+* Learn Angular data binding
+* Recreate the UI of the [https://bookmarkextension.vercel.app/] website
+* Components and atomic design patterns
+* Responsive design
+* Form validation through template-driven approach
+* Testing with Karma and Jasmine
 
-```bash
-ng serve
+## 🚀 Getting started
+
+```sh
+git clone https://github.com/JungleGiu/Angular-clone.git
+cd Angular-clone
+npm install   # or: yarn install, or: pnpm install
+npm start     # or: yarn start, or: pnpm start
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+## 🧪 Testing
+Note : **Testing is still incoplete**
+if you want to run the tests
+```sh
+npm test      # or: yarn test, or: pnpm test
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Preview
+![alt-text](./public/angular-clone.gif)
 
-```bash
-ng generate --help
+
+## 📁 Folder structure
+```
+.
+├── .gitignore
+├── .editorconfig
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.spec.json
+├── README.md
+├── angular.json
+├── package.json
+├── pnpm-lock.yaml
+├── angular
+├── .vscode
+├── dist
+├── node_modules
+├── public
+│   └── Images
+└── src
+    ├── app
+    │   ├── app.config.ts
+    │   ├── app.html
+    │   ├── app.routes.ts
+    │   ├── app.scss
+    │   ├── app.spec.ts
+    │   ├── app.ts
+    │   ├── components
+    │   │   ├── download-card
+    │   │   │   ├── download-card.html
+    │   │   │   ├── download-card.spec.ts
+    │   │   │   ├── download-card.scss
+    │   │   │   └── download-card.ts
+    │   │   ├── features-card
+    │   │   │   ├── features-card.html
+    │   │   │   ├── features-card.spec.ts
+    │   │   │   ├── features-card.ts
+    │   │   │   └── features-card.scss
+    │   │   ├── features-nav
+    │   │   │   ├── features-nav.html
+    │   │   │   ├── features-nav.spec.ts
+    │   │   │   ├── features-nav.ts
+    │   │   │   └── features-nav.scss
+    │   │   ├── text-content
+    │   │   │   ├── text-content.html
+    │   │   │   ├── text-content.spec.ts
+    │   │   │   ├── text-content.ts
+    │   │   │   └── text-content.scss  
+    │   │   ├── footer
+    │   │   │   ├── footer.html
+    │   │   │   ├── footer.spec.ts
+    │   │   │   ├── footer.ts 
+    │   │   │   └── footer.scss
+    │   │   └── header
+    │   │       ├── header.html
+    │   │       ├── header.spec.ts       
+    │   │       ├── header.ts
+    │   │       └── header.scss
+    │   ├── home
+    │   │   ├── home.html
+    │   │   ├── home.spec.ts
+    │   │   ├── home.ts
+    │   │   └── home.scss
+    │   └── sections
+    │       ├── download
+    │       │   ├── download.html
+    │       │   ├── download.spec.ts
+    │       │   ├── download.ts
+    │       │   └── download.scss
+    │       ├── faq
+    │       │   ├── faq.html
+    │       │   ├── faq.spec.ts
+    │       │   ├── faq.ts
+    │       │   └── faq.scss
+    │       ├── features
+    │       │   ├── features.html
+    │       │   ├── features.spec.ts
+    │       │   ├── features.ts
+    │       │   └── features.scss
+    │       ├── hero
+    │       │   ├── hero.html
+    │       │   ├── hero.spec.ts
+    │       │   ├── hero.ts
+    │       │   └── hero.scss
+    │       └── newsletter
+    │           ├── newsletter.html
+    │           ├── newsletter.spec.ts
+    │           ├── newsletter.ts
+    │           └── newsletter.scss
+    │       
+    ├── main.ts
+    ├── index.html
+    └── styles.scss 
+
 ```
 
-## Building
+## 🧰 Tecnologies used
+- Angular 20
+- TypeScript
+- pnpm
+- SASS (SCSS)
+- Karma
+- Jasmine
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## ☑️ To Do
+- [X] Use Angular toolkit
+- [X] Routing and navigation using Angular's router
+- [X] Clone the design
+- [X] Use atomic design principles to structure the code
+- [X] Responsive design using media queries
+- [X] Validate form fields
+- [X] gitflow workflow
+- [ ] Add animations
+- [ ] Implement unit tests and e2e tests
