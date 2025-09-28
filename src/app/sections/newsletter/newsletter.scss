@@ -1,0 +1,82 @@
+@use '../../../styles' as var;
+#newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 9rem;
+    width: 100%;
+    background-color: var.$tertiary-color;
+    padding: 2rem 0 2rem 0;
+#newsletter-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+ h3{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+ }
+ h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+ }
+ #newsletter-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 100%;
+    font-size: 1.5rem;
+    input{
+        border-radius: 0.2rem;
+        border: none;
+        padding: 1rem 8rem 1rem 1rem;
+        box-shadow: 0px 4px 4px rgba(108, 108, 108, 0.2);
+    }
+    button{
+        @include var.button(var.$quaternary-color, #ffffff, 1rem 2rem,0.9rem);
+       
+    } 
+    img {
+        display: none;
+        position:absolute;
+        transform: translate(600%, -80%);
+    }
+    #newsletter-email.error{
+        border: 3px solid var.$quaternary-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.2rem;
+    }
+    #newsletter-email.error::after{
+        content : 'Whoops, make sure it\'s an email';
+       padding: 0.5rem 0rem;
+        width: 100%;
+        background-color: var.$quaternary-color;
+        border-radius: 0.2rem;
+        color: #ffffff;
+        font-size: 0.8rem;
+        font-weight: 400;
+        text-align: center;
+      
+    }
+    #newsletter-email.error img {
+        display: block;
+    }
+    input:focus{
+        outline: none;
+    }
+ }
+}

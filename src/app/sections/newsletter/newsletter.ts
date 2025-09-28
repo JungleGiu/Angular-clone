@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
-
+import { Component, signal } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { NgClass } from '@angular/common';
 @Component({
   selector: 'app-newsletter',
-  imports: [],
+  imports: [FormsModule , NgClass],
   templateUrl: './newsletter.html',
   styleUrl: './newsletter.scss'
 })
 export class Newsletter {
-
+email = ''
+submitted = false;
+validateEmail = () =>{
+  this.submitted = true;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  return emailRegex.test(this.email)
+}
 }

@@ -1,1 +1,12 @@
-<p>newsletter works!</p>
+<section id="newsletter">
+<div id="newsletter-text">
+    <h3>35,000+ already joined</h3>
+    <h2>Stay up-to-date with what we’re doing</h2>
+</div>
+<div  id="newsletter-form">
+    <div id="newsletter-email" [ngClass]="{'error': submitted && !validateEmail()}">
+   <input type="email" placeholder="Enter your email address" [(ngModel)]="email" /><img src="Images/icon-error.svg">
+    </div>     
+    <button (click)="validateEmail()">Contact Us</button>
+</div>
+</section>
