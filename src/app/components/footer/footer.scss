@@ -1,0 +1,56 @@
+@use '../../../styles' as var;
+
+footer {
+    background-color: var.$primary-color;
+    padding: 2rem 10rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+#footer-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    img{
+        cursor: pointer;
+        scale: 1.1;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        li{
+            cursor: pointer;
+            a{
+                text-decoration: none;
+                color: #ffffff;
+                font-weight: 350;
+                font-size: 1rem;
+                text-transform: uppercase;
+                letter-spacing: 0.12rem;
+                cursor: pointer;
+            }
+        }
+        }
+    }
+    #social-media{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        img{
+            cursor: pointer;
+            scale: 0.9;
+        }
+    }

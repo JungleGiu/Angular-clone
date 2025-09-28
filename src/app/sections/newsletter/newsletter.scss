@@ -16,16 +16,17 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        margin-bottom: 1rem;
     }
  h3{
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 400;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
  }
  h2{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
     color: #ffffff;
  }
@@ -36,12 +37,18 @@
     align-items: flex-start;
     gap: 1rem;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     input{
         border-radius: 0.2rem;
         border: none;
         padding: 1rem 8rem 1rem 1rem;
         box-shadow: 0px 4px 4px rgba(108, 108, 108, 0.2);
+        width: 100%;
+    }
+    input:placeholder{
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: var.$secondary-color;
     }
     button{
         @include var.button(var.$quaternary-color, #ffffff, 1rem 2rem,0.9rem);
