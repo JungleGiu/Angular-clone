@@ -9,14 +9,14 @@
     margin-top: 9rem;
     width: 100%;
     background-color: var.$tertiary-color;
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0 3rem 0rem;
 #newsletter-text{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        margin-bottom: 1rem;
+        margin: 1rem auto;
     }
  h3{
     font-size: 1rem;
@@ -37,21 +37,22 @@
     align-items: flex-start;
     gap: 1rem;
     width: 100%;
+   
     font-size: 1.8rem;
     input{
         border-radius: 0.2rem;
         border: none;
-        padding: 1rem 8rem 1rem 1rem;
+        padding: 1.1rem 8rem 1.1rem 2rem;
         box-shadow: 0px 4px 4px rgba(108, 108, 108, 0.2);
         width: 100%;
     }
-    input:placeholder{
-        font-size: 1.5rem;
+    input::placeholder{
+        font-size: 1rem;
         font-weight: 400;
         color: var.$secondary-color;
     }
     button{
-        @include var.button(var.$quaternary-color, #ffffff, 1rem 2rem,0.9rem);
+        @include var.button(var.$quaternary-color, #ffffff, 1rem 2.5rem,1rem);
        
     } 
     img {
