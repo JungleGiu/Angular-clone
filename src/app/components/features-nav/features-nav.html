@@ -1,32 +1,14 @@
 <div id="features-nav">
-  <input
+  @for (card of cards; track card.id){
+    <input
     type="radio"
-    value="1"
-    name="card1"
-    [checked]="cardNumber() === 1"
-    (click)="cardNumber.set(1)"
+    [value]="card.id"
+    [name]="`card-${card.id}`"
+    [checked]="cardNumber() === card.id"
+    (click)="cardNumber.set(card.id)"
   />
-  <label [ariaChecked]="cardNumber() === 1" (click)="cardNumber.set(1)" for="card1"
-    >Simple Bookmarking</label
+  <label [ariaChecked]="cardNumber() === card.id" (click)="cardNumber.set(card.id)" [for]=""
+    >{{card.navTitle}}</label
   >
-  <input
-    type="radio"
-    value="2"
-    name="card2"
-    [checked]="cardNumber() === 2"
-    (click)="cardNumber.set(2)"
-  />
-  <label [ariaChecked]="cardNumber() === 2" (click)="cardNumber.set(2)" for="card2"
-    >Speedy Searching</label
-  >
-  <input
-    type="radio"
-    value="3"
-    name="card3"
-    [checked]="cardNumber() === 3"
-    (click)="cardNumber.set(3)"
-  />
-  <label [ariaChecked]="cardNumber() === 3" (click)="cardNumber.set(3)" for="card3"
-    >Easy Sharing</label
-  >
+  }
 </div>

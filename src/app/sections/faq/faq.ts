@@ -7,7 +7,7 @@ import { TextContent } from '../../components/text-content/text-content';
   styleUrl: './faq.scss'
 })
 export class Faq {
-faqs = [
+faqs : Question[] = [
   {
   question: "What is Bookmark?",
   answer: "Bookmark is a browser extension which allows you to easily manage your bookmarks. The extension provides simple utilities including but not limited to: searching through your bookmarks, categorizing them into collections, sharing bookmarks and much more."
@@ -25,4 +25,8 @@ faqs = [
   answer: "We're hard at work in developing compatible extensions for other chromium browsers such as Microsoft Edge and Brave."
 }
 ]
+}
+interface Question {
+  question: string;
+  answer: string;
 }

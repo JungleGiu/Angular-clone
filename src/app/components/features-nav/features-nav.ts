@@ -1,5 +1,5 @@
 import { Component, WritableSignal, Input } from '@angular/core';
-
+import { FeaturesDetails } from '../../sections/features/features';
 
 @Component({
   selector: 'app-features-nav',
@@ -8,5 +8,11 @@ import { Component, WritableSignal, Input } from '@angular/core';
   styleUrl: './features-nav.scss'
 })
 export class FeaturesNav {
-@Input({required: true}) cardNumber!: WritableSignal<1|2|3>
+@Input({required: true}) cardNumber!: WritableSignal<number>
+
+@Input({required: true}) cards!: FeaturesDetails[]
+
+setCardNumber(cardNumber: number) {
+  this.cardNumber.set(cardNumber)
+}
 }

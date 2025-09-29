@@ -1,47 +1,18 @@
 <div id="features-cards-container">
-     @if (cardNumber() === 1) {
-      <div  class="features-card" id="card-1">
-    <img src="/Images/illustration-features-tab-1.svg" alt="Bookmark hero image" />
+  @for (card of cards(); track card.id){
+    @if (card.id == cardNumber()){
+          <div  class="features-card" [id]="card.id">
+    <img [src]="card.image" alt="Bookmark features image" />
     <div class="card-text">    
     <app-text-content
-        [textContentSmallTitle]="'Bookmark in one click'"
+        [textContentSmallTitle]="card.title"
         [textContentDescription]="
-          'Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.'
+          card.description
         "
       >
       </app-text-content>
-      <button>More info</button>
+      <button>{{card.buttonText}}</button>
       </div>
-   
-    </div> 
-  }
-  @if (cardNumber() === 2){
-   <div  class="features-card" id="card-2">
-    <img src="/Images/illustration-features-tab-2.svg" alt="Bookmark hero image" />
-    <div class="card-text">
-        <app-text-content
-        [textContentSmallTitle]="'Intelligent search'"
-        [textContentDescription]="
-          'Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.'
-        "
-      >
-    </app-text-content>
-      <button>More info</button>
-      </div>
-    </div>
-  }
-   @if (cardNumber() === 3){ <div  class="features-card" id="card-3">
-    <img src="/Images/illustration-features-tab-3.svg" alt="Bookmark hero image" />
-    <div class="card-text">
-        <app-text-content
-        [textContentSmallTitle]="'Share your bookmarks'"
-        [textContentDescription]="
-          'Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.'
-        "
-      >
-      </app-text-content>
-      <button>More info</button>
-      </div>
-    </div>
+    </div> }
   }
 </div>
