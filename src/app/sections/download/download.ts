@@ -8,7 +8,7 @@ import { DownloadCard } from '../../components/download-card/download-card';
   styleUrl: './download.scss'
 })
 export class Download {
-browsers =  signal([
+browsers =  signal<Browser[]>([
   {
     image:'/Images/logo-chrome.svg',
     title: 'Add to Chrome',
@@ -25,4 +25,9 @@ browsers =  signal([
     version: 'Minimum version 46',
   }
 ])
+}
+interface Browser {
+  image: string;
+  title: string;
+  version: string;
 }

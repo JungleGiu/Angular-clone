@@ -6,9 +6,9 @@
     "
   />
 </div>
-  <div id="download-cards-container">
-@for (browser of browsers(); track $index) {
-    <app-download-card [browser]="browser">"></app-download-card>
-}
+  <div id="download-cards">
+
+    <app-download-card [browsers]="browsers()">"></app-download-card>
+
   </div>
 </section>

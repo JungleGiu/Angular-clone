@@ -8,13 +8,14 @@
 }
 
 
-#download-cards-container {
+#download-cards {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 90%;
   
 }
+
 
 
 #download-text {
@@ -26,7 +27,7 @@
         margin-top: 5rem;
     
     }
-    #download-cards-container {
+    #download-cards {
         flex-direction: column;
         width: 80%;
     }
