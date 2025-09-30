@@ -1,6 +1,6 @@
 <div id="download-cards-container">
 @for (browser of browsers; track $index) { 
-<div class="download-card">
+<div class="download-card" id="card-{{$index}}">
     <img src="{{browser.image}}" alt="Bookmark hero image" />
     <div class="card-text">
     <h3>{{browser.title}}</h3>
