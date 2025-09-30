@@ -1,9 +1,9 @@
 @use '../../../styles' as var;
 #faq{
-    margin-top: 9rem;
+    margin-top: 9rem ;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: rigth;
     align-items: center;
     gap: 2rem;
 }
@@ -28,6 +28,9 @@ summary {
   position: relative;
   padding-inline: 0;
   margin-bottom: 0;
+}
+summary:hover {
+  color: var.$quaternary-color;
 }
 
 details {
@@ -54,16 +57,29 @@ summary::-webkit-details-marker {
 }
 
 summary::after{
-      content: url('/Images/icon-arrow.svg');
+  content: '';
+  mask: url('/Images/icon-arrow.svg') no-repeat center;
+  -webkit-mask: url('/Images/icon-arrow.svg') no-repeat center;
+  background-color:var.$tertiary-color; 
+  width: 24px;
+  height: 24px;
   position: absolute;
   right: 30px;
   transform: translateX(100%);
-  
+  transition: all 0.3s ease-in-out;
 }
 
 details[open] summary::after  {
+  content: '';
+  mask: url('/Images/icon-arrow.svg') no-repeat center;
+  -webkit-mask: url('/Images/icon-arrow.svg') no-repeat center;
+  background-color: var.$quaternary-color;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+
   transform: translateX(100%) rotate(180deg);
-  
+  transition: all 0.3s ease-in-out;
 }
  button {
     @include var.button(var.$tertiary-color, #ffffff, 0.8rem 1.6rem, 1rem);
@@ -72,7 +88,7 @@ details[open] summary::after  {
 
 @media screen and (max-width: 768px) {
     #faq{
-        margin-top: 5rem;
+      margin: 10rem 0 5rem 0;
       gap: 1.5rem;
     }
     #faq-text{

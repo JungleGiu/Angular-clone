@@ -24,7 +24,8 @@ input:checked + label {
     padding: 0 2rem
 }
 label:hover {
-    color: var.$primary-color;
+    color: var.$quaternary-color;
+    transition: ease-in-out 0.3s;
 }
 
 @media screen and (max-width: 768px) {

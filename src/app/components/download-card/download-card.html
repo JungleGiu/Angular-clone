@@ -1,4 +1,6 @@
-<div class="download-card">
+<div id="download-cards-container">
+@for (browser of browsers; track $index) { 
+<div class="download-card" id="card-{{$index}}">
     <img src="{{browser.image}}" alt="Bookmark hero image" />
     <div class="card-text">
     <h3>{{browser.title}}</h3>
@@ -8,4 +10,6 @@
     <img src="/Images/bg-dots.svg" alt="Bookmark hero image" />
     <button>Add & Install Extension</button>
     </div>
+</div>
+}
 </div>

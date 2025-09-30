@@ -1,8 +1,22 @@
 @use '../../../styles' as var;
+
+#download-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    margin : 0 auto;
+}
+#download-cards-container #card-1{ 
+    transform: translateY(15%);
+}
+#download-cards-container #card-2{
+    transform: translateY(30%);
+}
 .download-card {
     background-color: #ffffff;
     border-radius: 0.5rem;
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 2rem;
     margin: 1rem;
     text-align: center;
     box-shadow: 1px 2px 4px 2px rgba(190, 190, 190, 0.2);
@@ -37,6 +51,7 @@
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    width: 100%;
 }
 .download-card button{
 @include var.button(var.$tertiary-color, #ffffff, 1rem 3rem, 1rem);
@@ -44,10 +59,16 @@ width: 100%;
 }
 
 @media  screen and (max-width: 768px) {
+
+        #download-cards-container {
+        flex-direction: column;
+        width: 100%;
+        gap: 0rem;
+    }
     .download-card{
         width: 90%;
         height: 70%;
-        margin: 1rem auto;
+        margin: 0 auto;
         padding: 1rem 1.5rem;
         gap: 2rem;
     }
@@ -61,8 +82,9 @@ width: 100%;
     }
     .card-button{
         gap: 1rem;
+
     }
     .download-card button{
-        @include var.button(var.$tertiary-color, #ffffff, 0.8rem 2.5rem, 0.85rem);
+        @include var.button(var.$tertiary-color, #ffffff, 0.8rem 2rem, 0.85rem);
     }
 }
