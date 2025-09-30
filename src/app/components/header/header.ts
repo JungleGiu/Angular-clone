@@ -5,13 +5,11 @@ import { MobileMenu } from '../../services/mobile-menu';
   selector: 'app-header',
   imports: [],
   templateUrl: './header.html',
-  styleUrl: './header.scss'
+  styleUrl: './header.scss',
+  
 })
 export class Header {
   
-  constructor(public mobileMenu: MobileMenu) {}
+  constructor (public mobileMenu: MobileMenu) {}
 
-  toggleMobileMenu() {
-    this.mobileMenu.toggle();
-  }
 }

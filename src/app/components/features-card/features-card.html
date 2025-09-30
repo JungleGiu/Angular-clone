@@ -1,7 +1,7 @@
 <div id="features-cards-container">
   @for (card of cards(); track card.id){
     @if (card.id == cardNumber()){
-          <div  class="features-card" [id]="card.id">
+          <div  class="features-card" [animate.enter]="animationSwipe()"  [id]="card.id">
     <img [src]="card.image" alt="Bookmark features image" />
     <div class="card-text">    
     <app-text-content

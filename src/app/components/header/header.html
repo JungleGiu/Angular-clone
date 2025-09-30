@@ -1,5 +1,5 @@
 <header>
-    <img src="Images/logo-bookmark.svg">
+    <img src="Images/logo-bookmark.svg" alt="Bookmark logo">
     <nav>
         <ul>
             <li><a href="#features">Features</a></li>
@@ -8,14 +8,14 @@
             <button><li>Login</li></button>
         </ul>
     </nav>
-    <img id="hamburger" (click)="toggleMobileMenu()" src="Images/icon-hamburger.svg">
+    <img id="hamburger" (click)="mobileMenu.open()" src="Images/icon-hamburger.svg">
 </header>
 
 @if (mobileMenu.isOpen()) {
-    <div id="mobile-menu" >
+<div id="mobile-menu" animate.enter="in-animation" animate.leave="out-animation">
 <div id="mobile-menu-control">
-   <img src="Images/logo-bookmark-white.svg" (click)="mobileMenu.close()">
-   <img src="Images/icon-close.svg" (click)="mobileMenu.close()">
+   <img src="Images/logo-bookmark-white.svg" alt="Bookmark logo">
+   <img src="Images/icon-close.svg" (click)="mobileMenu.close()" >
 </div>   
 <ul>
     <li><a href="#features" (click)="mobileMenu.closeOnNavigate()"> Features</a></li>

@@ -45,6 +45,13 @@ img {
     scale :0.95;
 }
 
+.in-animation {
+    animation: fadeIn 0.3s ease-in-out;
+}
+.out-animation {
+    animation: fadeIn 0.3s ease-in-out reverse;
+}
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -76,7 +83,6 @@ img {
         background-color: #1c213a;
         opacity: 0.98;
         padding : 1.2rem 0.8rem 1.2rem 0.8rem;
-        animation: fadeIn 0.3s ease-in-out;
         gap: 1.5rem;
         z-index: 10;
     ul{
