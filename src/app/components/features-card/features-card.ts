@@ -10,5 +10,4 @@ import { FeaturesDetails } from '../../sections/features/features';
 export class FeaturesCard {
 @Input({required: true}) cardNumber!: Signal<number>
 @Input({required: true}) cards!: Signal <FeaturesDetails[]> 
-
 }

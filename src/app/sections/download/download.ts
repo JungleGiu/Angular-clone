@@ -9,7 +9,7 @@ import { DownloadCard } from '../../components/download-card/download-card';
 })
 
 export class Download {
-  browsers =  signal <Browser[]>([
+  browsers =  <Browser[]>([
     {
       image:'/Images/logo-chrome.svg',
       title: 'Add to Chrome',
