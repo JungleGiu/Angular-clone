@@ -11,16 +11,16 @@
     <img id="hamburger" (click)="toggleMobileMenu()" src="Images/icon-hamburger.svg">
 </header>
 
-@if (isOpen()) {
+@if (mobileMenu.isOpen()) {
     <div id="mobile-menu" >
 <div id="mobile-menu-control">
-   <img src="Images/logo-bookmark-white.svg" (click)="toggleMobileMenu()">
-   <img src="Images/icon-close.svg" (click)="toggleMobileMenu()">
+   <img src="Images/logo-bookmark-white.svg" (click)="mobileMenu.close()">
+   <img src="Images/icon-close.svg" (click)="mobileMenu.close()">
 </div>   
 <ul>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#download">Pricing</a></li>
-    <li><a href="#newsletter">Contact</a></li>
+    <li><a href="#features" (click)="mobileMenu.closeOnNavigate()"> Features</a></li>
+    <li><a href="#download" (click)="mobileMenu.closeOnNavigate()">Pricing</a></li>
+    <li><a href="#newsletter" (click)="mobileMenu.closeOnNavigate()">Contact</a></li>
     <li><a>Login</a></li>
 </ul>
 <div id="mobile-menu-footer">

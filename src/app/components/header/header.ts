@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-
+import { MobileMenu } from '../../services/mobile-menu';
 
 @Component({
   selector: 'app-header',
@@ -8,9 +8,10 @@ import { Component, signal } from '@angular/core';
   styleUrl: './header.scss'
 })
 export class Header {
- isOpen = signal(false) ;
+  
+  constructor(public mobileMenu: MobileMenu) {}
 
- toggleMobileMenu() {
-    this.isOpen.set(!this.isOpen());
+  toggleMobileMenu() {
+    this.mobileMenu.toggle();
   }
 }
