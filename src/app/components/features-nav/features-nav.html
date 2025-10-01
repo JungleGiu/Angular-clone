@@ -5,9 +5,9 @@
     [value]="card.id"
     [name]="`card-${card.id}`"
     [checked]="cardNumber() === card.id"
-    (click)="cardNumber.set(card.id)"
+    (click)="setCardNumber(card.id)" id="`card-${card.id}`"
   />
-  <label [ariaChecked]="cardNumber() === card.id" (click)="cardNumber.set(card.id)" [for]=""
+  <label [ariaChecked]="cardNumber() === card.id" (click)="setCardNumber(card.id)" [for]="`card-${card.id}`"
     >{{card.navTitle}}</label
   >
   }

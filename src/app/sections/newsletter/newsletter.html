@@ -7,6 +7,6 @@
     <div id="newsletter-email" [ngClass]="{'error': submitted && !validateEmail()}">
    <input type="email" placeholder="Enter your email address" [(ngModel)]="email" /><img src="Images/icon-error.svg">
     </div>     
-    <button (click)="validateEmail()">Contact Us</button>
+    <button (click)="validateEmail() && alertMessage()">Contact Us</button>
 </div>
 </section>

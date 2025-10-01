@@ -67,17 +67,18 @@
         justify-content: center;
         align-items: center;
         border-radius: 0.2rem;
+        transition: all ease-in-out 0.3s;
     }
     #newsletter-email.error::after{
         content : 'Whoops, make sure it\'s an email';
-       padding: 0.5rem 0rem;
+       padding: 0.5rem 0 ;
+        display: block;
         width: 100%;
         background-color: var.$quaternary-color;
-        border-radius: 0.2rem;
         color: #ffffff;
         font-size: 0.8rem;
         font-weight: 400;
-        text-align: center;
+        text-align: left;
       
     }
     #newsletter-email.error img {

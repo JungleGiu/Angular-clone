@@ -15,4 +15,9 @@ validateEmail = () =>{
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
   return emailRegex.test(this.email)
 }
+alertMessage = () => {
+  if(this.submitted && this.validateEmail()){
+    return alert('Subscribed successfully!')
+  }
+}
 }

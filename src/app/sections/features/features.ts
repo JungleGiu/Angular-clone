@@ -10,6 +10,7 @@ import { FeaturesCard } from '../../components/features-card/features-card';
 })
 export class Features {
   cardNumber = signal<number>(1)
+  prevCardNumber = signal(1)
 
   cards = signal<FeaturesDetails[]>([
 {

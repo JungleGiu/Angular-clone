@@ -9,10 +9,11 @@ import { FeaturesDetails } from '../../sections/features/features';
 })
 export class FeaturesNav {
 @Input({required: true}) cardNumber!: WritableSignal<number>
-
+@Input({required: true}) prevCardNumber!: WritableSignal<number>
 @Input({required: true}) cards!: FeaturesDetails[]
 
-setCardNumber(cardNumber: number) {
-  this.cardNumber.set(cardNumber)
+setCardNumber(newCardNumber: number) {
+  this.prevCardNumber.set(this.cardNumber())
+  this.cardNumber.set(newCardNumber)
 }
 }
