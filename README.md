@@ -61,6 +61,11 @@ npm test      # or: yarn test, or: pnpm test
     │   ├── app.scss
     │   ├── app.spec.ts
     │   ├── app.ts
+    │   ├── hooks
+    │   │   ├── mobile-menu.ts
+    │   │   ├── mobile-menu.spec.ts
+    │   │   ├── observer.spec.ts  
+    │   │   └── observer.ts
     │   ├── components
     │   │   ├── download-card
     │   │   │   ├── download-card.html
@@ -146,5 +151,5 @@ npm test      # or: yarn test, or: pnpm test
 - [X] Responsive design using media queries
 - [X] Validate form fields
 - [X] gitflow workflow
-- [ ] Add animations
+- [X] Add animations
 - [ ] Implement unit tests and e2e tests
