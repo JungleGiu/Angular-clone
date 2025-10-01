@@ -71,3 +71,22 @@ $quaternary-color: #fa5757;
   text-align: left;
   gap: 1rem ;
 }
+
+@keyframes on-mount {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  
+}
+
+section {
+  opacity: 0;
+  transform: translateY(30px); 
+}
+
+section.animate {
+  animation: on-mount 1s forwards; 
+}

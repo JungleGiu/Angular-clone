@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { MobileMenu } from '../../services/mobile-menu';
+import { MobileMenu } from '../../hooks/mobile-menu';
 
 @Component({
   selector: 'app-header',

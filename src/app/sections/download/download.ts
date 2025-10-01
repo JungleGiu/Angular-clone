@@ -1,9 +1,10 @@
 import { Component , signal} from '@angular/core';
 import { TextContent } from '../../components/text-content/text-content';
 import { DownloadCard } from '../../components/download-card/download-card';
+import { Observer } from "../../hooks/observer";
 @Component({
   selector: 'app-download',
-  imports: [TextContent, DownloadCard],
+  imports: [TextContent, DownloadCard, Observer],
   templateUrl: './download.html',
   styleUrl: './download.scss'
 })
