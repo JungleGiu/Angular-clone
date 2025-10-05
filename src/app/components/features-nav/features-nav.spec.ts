@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { provideZonelessChangeDetection } from '@angular/core';
 import { FeaturesNav } from './features-nav';
 
 describe('FeaturesNav', () => {
@@ -8,7 +8,8 @@ describe('FeaturesNav', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [FeaturesNav]
+      imports: [FeaturesNav],
+      providers: [provideZonelessChangeDetection()],
     })
     .compileComponents();
 
