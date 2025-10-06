@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideZonelessChangeDetection } from '@angular/core';
 import { Hero } from './hero';
-import { TextContent } from '../../components/text-content/text-content';
+
 
 describe('Hero', () => {
   let component: Hero;
@@ -28,7 +28,5 @@ describe('Hero', () => {
     expect(compiled.querySelector('app-text-content')).toBeTruthy();
   });
 
-  afterAll(() => {
-    document.body.removeChild(fixture.nativeElement);
-  });
+
 });
