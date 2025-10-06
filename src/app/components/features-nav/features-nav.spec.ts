@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { input, provideZonelessChangeDetection, signal, WritableSignal } from '@angular/core';
+import { provideZonelessChangeDetection, signal } from '@angular/core';
 import { FeaturesNav } from './features-nav';
 import { featuresCardsMocks } from '../features-card/features-card-mocks.spec';
 
