@@ -1,4 +1,6 @@
-export const featuresCardsMocks = [
+import { FeaturesDetails } from "../../sections/features/features"
+
+export const featuresCardsMocks: FeaturesDetails[] = [
 {
   id: 1,
   image: '/Images/illustration-1.svg',
