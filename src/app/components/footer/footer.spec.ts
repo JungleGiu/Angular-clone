@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { provideZonelessChangeDetection } from '@angular/core';
 import { Footer } from './footer';
 
 describe('Footer', () => {
@@ -8,7 +8,8 @@ describe('Footer', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Footer]
+      imports: [Footer],
+      providers: [provideZonelessChangeDetection()],
     })
     .compileComponents();
 
@@ -20,4 +21,8 @@ describe('Footer', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('should render footer',() =>{
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('footer')).toBeTruthy();
+  })
 });

@@ -27,7 +27,7 @@ faqs : Question[] = [
 }
 ]
 }
-interface Question {
+export interface Question {
   question: string;
   answer: string;
 }

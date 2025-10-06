@@ -1,5 +1,5 @@
 import { Component, Input} from '@angular/core';
-
+import { Browser } from '../../sections/download/download';
 @Component({
   selector: 'app-download-card',
   imports: [],
@@ -7,5 +7,5 @@ import { Component, Input} from '@angular/core';
   styleUrl: './download-card.scss'
 })
 export class DownloadCard {
-@Input({required: true}) browsers: {title: string, image: string, version: string}[]=[]
+@Input({required: true}) browsers: Browser[]=[]
 }
