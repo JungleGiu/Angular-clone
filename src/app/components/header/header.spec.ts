@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideZonelessChangeDetection } from '@angular/core';
 import { Header } from './header';
+import { MobileMenu } from '../../hooks/mobile-menu';
 
 describe('Header', () => {
   let component: Header;
@@ -15,6 +16,7 @@ describe('Header', () => {
 
     fixture = TestBed.createComponent(Header);
     component = fixture.componentInstance;
+    component.mobileMenu = new MobileMenu();
     fixture.detectChanges();
   });
 

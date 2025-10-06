@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { provideZonelessChangeDetection, signal } from '@angular/core';
 import { FeaturesCard } from './features-card';
-import { featuresCardsMocks } from './features-card-mocks';
+import { featuresCardsMocks } from './features-card-mocks.spec';
 describe('FeaturesCard', () => {
   let component: FeaturesCard;
   let fixture: ComponentFixture<FeaturesCard>;
