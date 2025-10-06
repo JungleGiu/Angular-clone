@@ -23,4 +23,7 @@ describe('Header', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('should render mobile menu if open', () => {
+    
+  })
 });
