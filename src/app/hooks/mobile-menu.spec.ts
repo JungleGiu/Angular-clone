@@ -15,4 +15,26 @@ describe('MobileMenu', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+  it ('should be closed by default', () => {
+    expect(service.isOpen()).toBeFalse();
+  })
+  it ('should open menu', () => {
+    service.open();
+    expect(service.isOpen()).toBeTrue();
+  })
+  it ('should close menu', () => {
+    service.close();
+    expect(service.isOpen()).toBeFalse();
+  })
+  it ('should toggle menu', () => {
+    service.toggle();
+    expect(service.isOpen()).toBeTrue();
+    service.toggle();
+    expect(service.isOpen()).toBeFalse();
+  })
+  it ('should close menu on navigate', () => {
+    service.open();
+    service.closeOnNavigate();
+    expect(service.isOpen()).toBeFalse();
+  })
 });
