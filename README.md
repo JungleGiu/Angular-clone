@@ -152,4 +152,4 @@ npm test      # or: yarn test, or: pnpm test
 - [X] Validate form fields
 - [X] gitflow workflow
 - [X] Add animations
-- [ ] Implement unit tests and e2e tests
+- [X] Implement unit tests with Karma and Jasmine

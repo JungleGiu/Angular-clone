@@ -2,7 +2,11 @@
 
 footer {
   background-color: var.$primary-color;
+<<<<<<< HEAD
   padding: 4rem 10rem 2rem;
+=======
+  padding: 3rem 10rem;
+>>>>>>> develop
   text-align: center;
   color: #ffffff;
   font-size: 1.2rem;
@@ -12,6 +16,7 @@ footer {
   align-items: center;
   gap: 1rem;
 }
+
 #footer-nav {
   display: flex;
   flex-direction: row;
@@ -20,6 +25,7 @@ footer {
   gap: 3rem;
   img {
     cursor: pointer;
+    margin: 1rem auto;
     scale: 1.1;
   }
   ul {

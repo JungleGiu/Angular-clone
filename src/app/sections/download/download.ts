@@ -28,7 +28,7 @@ export class Download {
     }
   ])
   }
- interface Browser {
+ export interface Browser {
     image: string;
     title: string;
     version: string;
